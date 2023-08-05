@@ -1,0 +1,47 @@
+.powerIsland {
+  color: var(--darkColor);
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 60px;
+}
+.powerIsland__list {   
+  gap: 16px;
+}
+.powerIsland__title {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 576px) {
+  .powerIsland__title {
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width:768px) {
+  .powerIsland {
+    font-size: 24px;
+  }
+  .powerIsland__title {
+    margin-bottom: 32px;
+  }
+}
+
+@media (min-width: 992px) {
+  .powerIsland {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .powerIsland {
+    font-size: 36px;
+  }
+  .powerIsland__title {
+    margin-bottom: 48px;
+  }
+}
+
+
+
+
+

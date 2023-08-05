@@ -1,0 +1,23 @@
+.nav__list {
+  gap: 30px;
+}
+
+.nav__img { 
+  margin-right: 12px;
+}
+.nav__link {
+  width: 100%;
+  text-decoration: none;
+  color: var(--darkColor);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+}
+.nav__list > li:hover {
+  transform: translateY(1px);
+}
+@media (min-width:992px) {
+  .nav__list {
+    gap: 78px;
+  }
+}

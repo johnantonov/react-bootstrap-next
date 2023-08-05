@@ -1,0 +1,240 @@
+.announce {
+  position: relative;
+  background-image: url('../../../../../public/announce/mobBg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+}
+.announce::after {
+  position: absolute;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 26, 43, 0.50);
+}
+.announce__title {
+  z-index: 1;
+  color: var(--lightText);
+  margin-bottom: 24px;
+}
+.getJournal {
+  z-index: 1;
+  margin-top: 24px;
+  padding: 48px 12px;
+  background: var(--bgDarkColor);
+}
+.announceDrop__wrapper {
+  z-index: 1;
+}
+.getJournal__wrapper {
+  z-index: 1;
+}
+.getJournal_sm {
+  position: relative;
+}
+.getJournal__title {
+  margin-bottom: 40px;
+  color: var(--lightText);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 130%;
+}
+.getJournal__form {
+  gap: 32px;
+  display: flex;
+  flex-direction: column;
+}
+.getJournal__wrapperInput {
+  display: flex;
+  flex-direction: column;
+}
+.getJournal__input {
+  color: var(--lightText);
+  padding-bottom: 12px;
+  background: var(--bgDarkColor);
+  border: none;
+  border-bottom: 1px solid var(--lightText);
+}
+.getJournal__input_name {
+  margin-bottom: 32px;
+}
+.getJournal__input::placeholder {
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 130%; 
+}
+.getJournal__input_checkbox {
+  margin-bottom: 40px;
+}
+
+/* CHECKBOX */
+.getJournal__form input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+.checkmark {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #FFF;
+}
+.getJournal__form input[type="checkbox"]:checked + .checkmark::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 8px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+/* ----------------- */
+
+.textForAgreement {
+  vertical-align:text-top;
+  padding-left: 16px;
+  color: var(--lightText);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px; 
+}
+.getJournal__submit {
+  display: block;
+  margin: 0 auto;
+  width: 248px;
+  padding: 12px 24px;
+  color:  var(--lightText);
+  background-color: var(--bgDarkColor);
+  border: 2px solid var(--dividerColor) !important;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 130%; 
+}
+
+@media (min-width: 576px) {
+  .announce {
+    padding: 24px 0;
+    background: url('../../../../../public/announce/576bg.jpg');
+  }
+  .announce__title {
+    margin-bottom: 16px;
+  }
+  .getJournal {
+    padding: 56px 0px ;
+  }
+  .getJournal__title {
+    text-align: left;
+  }
+  .getJournal__wrapperInput {
+    flex-direction: row;
+  }
+  .getJournal__input_name {
+    margin: 0 24px 0 0;
+  }
+
+  
+}
+
+@media (min-width:768px) {
+  .announce {
+    padding: 56px 0;
+    background: url('../../../../../public/announce/768bg.jpg');
+  }
+  .announce__title {
+    margin-bottom: 32px;
+  }
+  .getJournal {
+    margin-top: 32px;
+    padding: 80px 0px;
+  }
+  .getJournal__form {
+    gap: 64px;
+  }
+  .getJournal__title {
+    margin-bottom: 64px;
+    font-size: 18px;
+  }
+  .getJournal__wrapperInput {
+    flex-direction: column;
+  }
+  .getJournal__input {
+    font-size: 22px;
+    color: var(--lightText);
+  }
+  .getJournal__input_name {
+    margin: 0 0 56px 0;
+  }
+  .getJournal__input::placeholder {
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+  .textForAgreement {
+    vertical-align:text-top;
+    padding-left: 16px;
+    font-size: 14px;
+  }
+  .getJournal__submit {
+    width: 256px;
+    height: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .announce {
+    background: url('../../../../../public/announce/992bg.jpg');
+  }
+  .getJournal {
+    margin-top: 0px;
+    padding: 99px 28px 110px;
+  }
+  .getJournal__form {
+    gap: 56px;
+  }
+  .getJournal__title {
+    font-size: 24px;
+  }
+  .textForAgreement {
+    font-size: 14px;
+  }
+  .getJournal__submit {
+    width: 336px;
+    height: 56px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .getJournal {
+    margin-top: 0px;
+    padding: 104px 28px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .announce {
+    padding: 100px 0;
+    background: url('../../../../../public/announce/1400bg.jpg');
+    background-repeat: no-repeat;
+  }
+  .announce__title {
+    margin-bottom: 32px;
+  }
+  .getJournal {
+    margin-top: 0px;
+    padding: 89px 68px;
+  }
+  .getJournal__form {
+    gap: 72px;
+  }
+}

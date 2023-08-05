@@ -1,0 +1,83 @@
+@import url('https://fonts.cdnfonts.com/css/pt-root-ui?styles=24038,24036,24037,24035');
+body {
+  font-family: 'PT Root UI', sans-serif !important;
+}
+
+:root {
+  --darkColor: #000;
+  --bgColor: #F0F0F0;
+  --bgHeader: #fff;
+  --bgDarkColor: #161A2B;
+  --lightText: #fff;
+  --dividerColor: #EE1B24;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scrollbar-color: var(--dividerColor)
+}
+::-webkit-scrollbar {
+  width: 5px; 
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--dividerColor);
+}
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+li {
+  list-style: none;
+}
+.myContainer {
+  margin: 0 24px;
+}
+main {
+  background: var(--bgColor);
+}
+.usualBtn {
+  font-size: 14px !important;
+  width: 150px;
+  padding: 12px !important;
+  border-radius: 0 !important;
+  border: 2px solid var(--darkColor) !important;
+  border-radius: 0;
+}
+.drop__btn {
+  padding: 0 !important;
+}
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+@media (min-width: 768px) {
+  .myContainer {
+    margin: auto 48px;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+}
+
+@media (min-width: 992px) {
+  h2 {
+    font-size: 36px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .myContainer {
+    margin: auto 120px;
+  }
+}

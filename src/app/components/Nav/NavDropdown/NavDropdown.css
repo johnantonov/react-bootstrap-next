@@ -1,0 +1,15 @@
+.dropBtnImg { 
+  margin-right: 16px;
+}
+.drop__btn {
+  display: block;
+}
+.drop__btn {
+  color: var(--darkColor);
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: var(--darkColor) !important;
+  background-color: var(--bgHeader) !important;
+  border: none !important;
+}

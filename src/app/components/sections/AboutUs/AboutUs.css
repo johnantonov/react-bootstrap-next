@@ -1,0 +1,114 @@
+.about {
+  background: var(--bgDarkColor);
+  color: var(--lightText);
+  margin-bottom: 24px;
+}
+.leftContainer {
+  padding:40px 28px 0;
+}
+.about__title {
+  color: var(--lightText) !important;
+  margin-bottom: 48px;
+}
+.about__cards {
+  display: flex;
+  justify-content: center;
+  background: url(../../../../../public/about/bg1x.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardsList {
+  padding-bottom: 30px !important;
+  gap: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .leftContainer {
+    padding:24px 20px 0 48px;
+  }
+  .about__text {
+    width: 248px;
+    margin-bottom: 26px;
+    margin-right: 24px;
+  }
+  .about__list > ul {
+    font-weight: 700;
+  }
+  .about__cards {
+    background: url(../../../../../public/about/bg576.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .cardsList > li > * {
+    width: 248px;
+    height: 136px;
+  }
+}
+
+@media (min-width:768px) {
+  .about {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+  .leftContainer {
+    padding: 144px 48px;
+  }
+  .about__title {
+    margin-bottom: 48px;
+  }
+  .about__cards {
+    background: url(../../../../../public/about/bg1x.jpg);
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+  .about__text {
+    width: 391px;
+    margin-bottom: 32px;
+  }
+  .cardsList > li > * {
+    width: 208px;
+    height: 144px;
+  }
+}
+
+@media (min-width: 992px) {
+  .about {
+    margin-bottom: 64px;
+  }
+  .leftContainer {
+    padding: 80px 48px;
+  }
+  .about__cards {
+    display: flex;
+    align-items: center;
+    background: url(../../../../../public/about/bg778.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .cardsList > li > * {
+    height: 208px;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    margin-bottom: 80px;
+  }
+  .leftContainer {
+    padding: 80px 20px;
+  }
+  .cardsList {
+    width: 500px;
+  }
+}
+
+
+
+
+
+

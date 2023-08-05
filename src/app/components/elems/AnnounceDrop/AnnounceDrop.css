@@ -1,0 +1,68 @@
+.AnnounceDrop {
+  background: var(--bgColor);
+  position: relative;
+}
+.choice {
+  background: var(--bgHeader);
+}
+.choice::before {
+  position: absolute;
+  content: 'Анонс по дате';
+  top: 10px;
+  left: 10px;
+}
+.choices__item--selectable[data-custom-properties="[object Object]"] {
+  display: none;
+}
+.AnnounceDrop__list {
+  overflow: hidden;
+  max-height: 392px;
+  padding: 24px 12px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.AnnounceDrop__list > li {
+  width: 100%;
+}
+.AnnounceDropAll {
+  padding: 10px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: var(--darkColor);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.AnnounceDropAll__arrow {
+  margin-left: 10px;
+}
+
+
+@media (min-width: 576px) {
+  .AnnounceDrop__list {
+    max-height: 192px;
+  }
+}
+
+@media (min-width:768px) {
+  .AnnounceDropAll {
+    display: none;
+  }
+  .AnnounceDrop__list {
+    overflow: auto;
+    max-height: 600px;
+    padding: 24px 40px !important;
+    gap: 26px;
+  }
+}
+@media (min-width: 992px) {
+  .AnnounceDropAll {
+    display: none;
+  }
+  .AnnounceDrop__list {
+    padding: 24px 16px !important;
+    gap: 32px;
+  }
+}

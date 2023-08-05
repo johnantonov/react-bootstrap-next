@@ -1,0 +1,137 @@
+.CardWithImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 272px;
+  min-height: 192px;
+  background: var(--lightText);
+}
+.CWI__header {
+  display: flex;
+  align-items: center;
+}
+.CWI__wrapperImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+  background-color: var(--bgDarkColor);
+}
+.CWI__wraperTitle {
+  margin-top: 8px;
+}
+.CWI__title {
+  color: var(--darkColor);
+  font-size: 14px;
+  font-weight: 700;
+}
+.CWI__text {
+  margin: 12px;
+  line-height: 18px;
+  color: var(--darkColor);
+  font-weight: 400;
+  font-size: 12px;
+}
+.CWI__divider {
+  align-self: end;
+  width: 200px;
+  height: 4px;
+  background: var(--dividerColor);
+}
+
+
+
+
+@media (min-width: 576px) {
+  .CardWithImg {
+    width: 248px;
+    /* min-height: 176px; */
+  }
+  .CWI__wrapperImg {
+    margin-right: 12px;
+    padding: 12px 12px;
+  }
+  .CWI__divider {
+    width: 136px;
+  } 
+  .CWI__title {
+    font-size: 18px;
+  }
+  .CWI__text {
+    margin: 16px;
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width:768px) {
+  .CardWithImg {
+    width: 320px;
+  }
+  .CWI__wrapperImg {
+    margin-right: 16px;
+  }
+  .CWI__divider {
+    width: 204px;
+  } 
+  .CWI__title {
+    font-size: 18px;
+  }
+  .CWI__text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+@media (min-width: 992px) {
+  .CardWithImg {
+    width: 448px;
+  }
+  .CWI__wrapperImg {
+    margin-right: 32px;
+    width: 76px;
+    height: 76px;
+  }
+  .CWI__divider {
+    width: 328px;
+  } 
+  .CWI__title {
+    font-size: 24px;
+  }
+  .CWI__text {
+    margin: 24px;
+  }
+  .CWI__img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .CardWithImg {
+    width: 576px;
+  }
+  .CWI__wrapperImg {
+    margin-right: 48px;
+    width: 112px;
+    height: 112px;
+  }
+  .CWI__img {
+    width: 80px;
+    height: 80px;
+  }
+  .CWI__divider {
+    width: 360px;
+    height: 8px;
+  } 
+  .CWI__title {
+    font-size: 24px;
+  }
+  .CWI__text {
+    font-size: 24px;
+    margin: 40px;
+  }
+}
+
